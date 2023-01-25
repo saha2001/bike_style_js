@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  padding: 0px;
+  margin: 0px;  
+  background-color:rgb(5, 69, 244);
+}
+
+.container{
+   position: relative;
+    width:100vw;
+    height: 100vh;
+    background-color:rgb(5, 69, 244);
+}
+.saha{
+    position:inherit;
+    color:#9400D3;
+    font-style:oblique;
+    margin-left: 30px;
+    text-shadow: 2px 0px 5px black;
+}
+.container ul{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+.container li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.container li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family:sans-serif ;
+    color: #0b090b;
+    font-weight: 600;
+    transition: 1s ease-in-out;
+}
+.container li a::after{
+   content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    margin: auto;
+   color: transparent;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.container li a:hover::after{
+    width: 100%;
+    background-color:rgb(28, 211, 211) ;
+}
+.container li a:hover{
+    
+}
+.thumbnail{
+   margin-top: 30px; 
+}
+.thumbnail li {
+list-style: none;
+position: relative;
+display: grid;
+grid-row: inherit;
+margin-top: 10px;
+ 
+}
+.thumbnail img{
+    display: block;
+    
+    
+    max-width: 50px;
+   
+    transition: 1s ease-in-out;
+ 
+}
+.thumbnail img:hover{
+    transform: translateX(15px);
+    transition: 1s ease-in-out;
+}
+.big-img img{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    max-width: 300px;
+    max-height: 300px;
+   
+   
+}
+.content{
+    position: absolute;
+    cursor: pointer;
+    max-width: 35%;
+    right: 1%;
+    top: 100px;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 2px 0px 5px black;
+    font-family: cursive;
+    margin-left: 16%;
+
+}
+.content h1{
+    font-family: fantasy;
+    color: rgb(28, 211, 211);
+    text-shadow: 2px 0px 5px black;
+     margin-top: 10px;
+}
+.content h5{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 0px 5px black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+  
+.path{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #e5e5e5;
+    clip-path:circle(220px at left 170px);
+}
